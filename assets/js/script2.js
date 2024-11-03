@@ -4,8 +4,8 @@ async function getSomething() {
     const data = await res.json();
     console.log(data);
     } catch (e) {
-        let template =""
-        
+        const errorSpan = document.getElementById ("text")
+        errorSpan.innerHTML = `Algo salio mal! Error:${e.message}`
 
     /*alert(e.message);*/
     }
